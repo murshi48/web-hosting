@@ -1,0 +1,67 @@
+/* Full page background */
+.video-wrapper {
+  background: linear-gradient(135deg, #4e007a, #7b1fa2, #9c27b0);
+  height: 100vh;
+  padding-top: 40px;
+  overflow-y: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Center card */
+.video-card {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+  color: white;
+  animation: slideUp 0.9s ease;
+}
+
+/* Heading */
+.welcome {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Video block container */
+.video-block {
+  margin-bottom: 40px;
+}
+
+/* Sub-heading */
+.video-block h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Stylish video player */
+.video-player {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+  outline: none;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

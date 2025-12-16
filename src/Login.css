@@ -1,0 +1,103 @@
+/* Full container */
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background video */
+.login-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+/* Login box */
+.login-box {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  width: 360px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 1.2s ease-in-out;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+/* Logo */
+.login-logo {
+  width: 110px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+/* Title */
+.login-title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+/* Login/Register button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ff6f00;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #ff8f00;
+}
+
+/* Toggle link */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link span {
+  color: #ffa726;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
